@@ -11,4 +11,5 @@ C++ program that uses dot graph syntax to quickly visualize a Red Black Tree dat
 # Example
 
 ![RBTVisualizeDesc](https://i.ibb.co/zSfMZZ7/Capture.png)
+*rbt.png*
 ![RBTExample](https://i.ibb.co/ZXDkf4p/rbt.png)
