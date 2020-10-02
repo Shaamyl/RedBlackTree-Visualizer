@@ -2,9 +2,13 @@
 C++ program using dot graph syntax to quickly visualize a Red Black Tree data structure.
 
 # Usage
-1, Install graphviz dot: https://graphviz.org/download/
-2, Open cmd terminal in repository folder and type command "make"
-3, Enter nodes to insert into Red Black Tree.
-4, rbt.png is created with the Red Black Tree visualization in the same folder as the repository.
+1. (If not already installed) Install C++ g++ compiler.
+2. (If not already installed) Install graphviz dot: https://graphviz.org/download/ 
+3. Open cmd terminal in repository folder and type command "make".
+4. Enter nodes to insert into Red Black Tree.
+5. Open rbt.png, created in the same folder as the repository, to see Red Black Tree Visualization.
 
-![RBTVisualizeDesc](https://ibb.co/C6SwkK3)
+# Example
+
+![RBTVisualizeDesc](https://i.ibb.co/z8wpXwR/Capture.png)
+![RBTExample](https://i.ibb.co/ZXDkf4p/rbt.png)
