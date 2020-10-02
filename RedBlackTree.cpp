@@ -151,9 +151,10 @@ void RedBlackTree::Insert(int data){
         }else if(IsRightChild(cNode)){ //cnode is right child, two cases for parent
             if(IsRightChild(cNode->parent)){ //parent is right child
                 RotateLeft(cNode->parent->parent);
-                cNode->parent->color = REDBLACKTREE_COLOR_BLACK;
-                cNode->parent->leftChild->color = REDBLACKTREE_COLOR_RED;
-                cNode = cNode->parent;
+                int temp = cNode->parent->color;
+                cNode->parent->color = cNode->parent->leftChild->color;
+                cNode->parent->leftChild->color = temp;
+                return;
             }else{ //parent is left child
                 RotateLeft(cNode->parent);
                 cNode = cNode->leftChild;
@@ -164,9 +165,10 @@ void RedBlackTree::Insert(int data){
                 cNode = cNode->rightChild;
             }else{ //parent is left child
                 RotateRight(cNode->parent->parent);
-                cNode->parent->color = REDBLACKTREE_COLOR_BLACK;
-                cNode->parent->rightChild->color = REDBLACKTREE_COLOR_RED;
-                cNode = cNode->parent;
+                int temp = cNode->parent->color;
+                cNode->parent->color = cNode->parent->rightChild->color;
+                cNode->parent->rightChild->color = temp;
+                return;
             }
         }
     }
