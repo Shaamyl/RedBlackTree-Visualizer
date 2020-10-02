@@ -1,5 +1,5 @@
 # RedBlackTree-Visualizer
-C++ program using dot graph syntax to quickly visualize a Red Black Tree data structure.
+C++ program that uses dot graph syntax to quickly visualize a Red Black Tree data structure.
 
 # Usage
 1. (If not already installed) Install C++ g++ compiler.
